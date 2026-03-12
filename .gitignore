@@ -1,0 +1,6 @@
+*.csv
+*.jpg
+*.png
+date_kaggle_mediapipe.csv
+sign_language_env/
+__pycache__/
