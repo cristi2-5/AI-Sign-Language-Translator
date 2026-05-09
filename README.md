@@ -1,16 +1,16 @@
 # AI Sign Language Translator
 
-## 🌟 About the Project
+## About the Project
 This project started as a curiosity-driven experiment, built with the assistance of Large Language Models (LLMs). The goal was to create a real-time American Sign Language (ASL) translator using a standard webcam. The process of building, troubleshooting, and refining this application was so fascinating that it eventually sparked the idea for my bachelor's thesis!
 
-## ❌ The First Attempt (And Why It Failed)
+## The First Attempt (And Why It Failed)
 In the `first_try` directory, you'll find the initial approach: a Convolutional Neural Network (CNN) built with PyTorch. 
 The idea was to feed raw, resized images (64x64 pixels) directly into the neural network to classify the signs. However, this approach had significant drawbacks:
 - **Environmental Sensitivity:** The model was easily confused by different lighting conditions, complex backgrounds, and varying skin tones.
 - **Computational Overhead:** Processing raw image pixels in real-time is computationally heavy.
 - **Inaccuracy in Real-Time:** While it might perform decently on static dataset images, it struggled to provide stable and reliable predictions on a live, noisy webcam feed.
 
-## 🧠 The Successful Approach (MediaPipe + Keras)
+## The Successful Approach (MediaPipe + Keras)
 To solve the issues of the first attempt, the strategy shifted from processing *pixels* to processing *geometry*. 
 
 ### 1. Data Processing
